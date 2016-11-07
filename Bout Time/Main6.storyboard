@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="khL-G7-6QH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S9y-Ei-H3e">
+            <objects>
+                <viewController storyboardIdentifier="6" id="khL-G7-6QH" customClass="ViewController" customModule="Bout_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ler-dC-OF8"/>
+                        <viewControllerLayoutGuide type="bottom" id="oTl-kU-Une"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VO3-Vq-9sC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9h-BA-15m">
+                                <rect key="frame" x="162" y="553" width="51" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-hY-bgU">
+                                <rect key="frame" x="154" y="180" width="66" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-bh-gYH">
+                                <rect key="frame" x="110" y="284" width="154" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play_again.png"/>
+                                <connections>
+                                    <action selector="playAgainButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="XIx-k7-Lof"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-y5-98C">
+                                <rect key="frame" x="143" y="155" width="86" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.56470588239999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwZ-RI-i3e">
+                                <rect key="frame" x="317" y="404" width="42" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="up_full.png"/>
+                                <connections>
+                                    <action selector="label4Button:" destination="khL-G7-6QH" eventType="touchUpInside" id="gnq-LT-H6N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-P6-ofd">
+                                <rect key="frame" x="317" y="148" width="42" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="up_half.png"/>
+                                <connections>
+                                    <action selector="label2UpButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="yFm-kH-Jst"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTv-PV-M3D">
+                                <rect key="frame" x="317" y="20" width="42" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down_full.png"/>
+                                <connections>
+                                    <action selector="label1Button:" destination="khL-G7-6QH" eventType="touchUpInside" id="wAB-vR-lEW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPZ-rt-ThV">
+                                <rect key="frame" x="317" y="208" width="42" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down_half.png"/>
+                                <connections>
+                                    <action selector="label2DownButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="2R4-ji-XXg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orN-he-xXQ">
+                                <rect key="frame" x="317" y="276" width="42" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="up_half.png"/>
+                                <connections>
+                                    <action selector="label3UpButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="b3f-1K-0vf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSL-BT-bIC">
+                                <rect key="frame" x="317" y="336" width="42" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down_half.png"/>
+                                <connections>
+                                    <action selector="label3DownButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="Ca1-u9-gRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-MW-0K1">
+                                <rect key="frame" x="91" y="559" width="192" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next_round_success.png"/>
+                                <connections>
+                                    <action selector="nextRoundButton:" destination="khL-G7-6QH" eventType="touchUpInside" id="Rn6-6s-eoN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap events to learn more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxy-Pz-Hda">
+                                <rect key="frame" x="90" y="615" width="192" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.56470588239999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q7x-kR-LrN">
+                                <rect key="frame" x="16" y="148" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Event Goes Here">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="event2Seque:" destination="khL-G7-6QH" eventType="touchUpInside" id="geZ-pz-1bU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gyu-T8-cVi">
+                                <rect key="frame" x="16" y="276" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Event Goes Here">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="event3Seque:" destination="khL-G7-6QH" eventType="touchUpInside" id="zel-MA-mo7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="chn-u3-Yl0">
+                                <rect key="frame" x="16" y="20" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Event Goes Here">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="event1Seque:" destination="khL-G7-6QH" eventType="touchUpInside" id="1xg-uA-my5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="46u-Wi-kRG">
+                                <rect key="frame" x="16" y="404" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Event Goes Here">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="event4Seque:" destination="khL-G7-6QH" eventType="touchUpInside" id="KuG-hi-2DD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.1647058824" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="D9h-BA-15m" id="yk5-ad-bLT"/>
+                        <outlet property="event1Button" destination="chn-u3-Yl0" id="U9d-X7-Kkj"/>
+                        <outlet property="event2Button" destination="Q7x-kR-LrN" id="pKg-2e-MD3"/>
+                        <outlet property="event3Button" destination="Gyu-T8-cVi" id="jNA-pK-pRe"/>
+                        <outlet property="event4Button" destination="46u-Wi-kRG" id="uVi-GO-Te0"/>
+                        <outlet property="instructionLabel" destination="kxy-Pz-Hda" id="aKd-gq-Lue"/>
+                        <outlet property="label1Button" destination="vTv-PV-M3D" id="Jc6-Ef-jZZ"/>
+                        <outlet property="label2DownButton" destination="dPZ-rt-ThV" id="epf-rx-88e"/>
+                        <outlet property="label2UpButton" destination="ppU-P6-ofd" id="VvX-dz-gTc"/>
+                        <outlet property="label3DownButton" destination="uSL-BT-bIC" id="CQH-1t-ZoG"/>
+                        <outlet property="label3UpButton" destination="orN-he-xXQ" id="48l-Vv-eZT"/>
+                        <outlet property="label4Button" destination="DwZ-RI-i3e" id="hZY-gy-flI"/>
+                        <outlet property="nextRoundButton" destination="IaQ-MW-0K1" id="cN1-54-2w8"/>
+                        <outlet property="playAgainButton" destination="dtL-bh-gYH" id="hUZ-kX-W7B"/>
+                        <outlet property="resultsField" destination="VZ4-hY-bgU" id="gUe-TB-oZv"/>
+                        <outlet property="yourScoreLabel" destination="gZ2-y5-98C" id="cqt-23-1pe"/>
+                        <segue destination="mfI-dL-aeo" kind="presentation" identifier="EventDetailSeque" id="v7K-R1-hOT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IED-k4-9RN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="121"/>
+        </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="a7f-Ic-gQt">
+            <objects>
+                <viewController id="mfI-dL-aeo" customClass="EventDetailViewController" customModule="Bout_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Av-Vg-uhM"/>
+                        <viewControllerLayoutGuide type="bottom" id="aH7-nD-fc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1IY-c8-ZSW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-jv-FWX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="f53-Xi-MGI"/>
+                                </constraints>
+                                <state key="normal" image="webview_bar.png"/>
+                                <connections>
+                                    <action selector="DismissButton:" destination="mfI-dL-aeo" eventType="touchUpInside" id="0Ha-cQ-hAh"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5de-Ss-PSQ">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w1k-jv-FWX" firstAttribute="top" secondItem="2Av-Vg-uhM" secondAttribute="bottom" id="9Qm-pO-XJh"/>
+                            <constraint firstItem="5de-Ss-PSQ" firstAttribute="bottom" secondItem="aH7-nD-fc7" secondAttribute="top" id="AKf-eb-V0f"/>
+                            <constraint firstItem="w1k-jv-FWX" firstAttribute="trailing" secondItem="5de-Ss-PSQ" secondAttribute="trailing" id="Aya-DJ-zFQ"/>
+                            <constraint firstItem="5de-Ss-PSQ" firstAttribute="top" secondItem="w1k-jv-FWX" secondAttribute="bottom" id="Fh8-Di-IrG"/>
+                            <constraint firstAttribute="trailing" secondItem="w1k-jv-FWX" secondAttribute="trailing" id="GHT-68-xrm"/>
+                            <constraint firstItem="w1k-jv-FWX" firstAttribute="leading" secondItem="1IY-c8-ZSW" secondAttribute="leading" id="cAU-JL-7vZ"/>
+                            <constraint firstItem="w1k-jv-FWX" firstAttribute="leading" secondItem="5de-Ss-PSQ" secondAttribute="leading" id="pbo-Nv-7Xr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EventWebView" destination="5de-Ss-PSQ" id="Dvd-uR-bUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0T-BL-Qk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down_full.png" width="158" height="457"/>
+        <image name="down_half.png" width="158" height="229"/>
+        <image name="next_round_success.png" width="558" height="142"/>
+        <image name="play_again.png" width="450" height="142"/>
+        <image name="up_full.png" width="158" height="457"/>
+        <image name="up_half.png" width="158" height="229"/>
+        <image name="webview_bar.png" width="1333" height="167"/>
+    </resources>
+</document>
