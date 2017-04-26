@@ -50,6 +50,14 @@ class ViewController: UIViewController {
     var correctQuestions = 0
     var indexOfSelectedEvent: Int = 0
     
+    //Sound Clip File Variables//
+    let soundType = "wav"
+    let startSoundFile = "Boxing Bell Start Round"
+    let endSoundFile = "Boxing Bell End Round"
+    let correctSoundFile = "CorrectDing"
+    let incorrectSoundFile = "IncorrectBuzz"
+    
+    //System Sound ID's//
     var correctSound: SystemSoundID = 0
     var incorrectSound: SystemSoundID = 1
     var startSound: SystemSoundID = 2
@@ -94,8 +102,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var playAgainButton: UIButton!
     @IBAction func playAgainButton(_ sender: Any) {
-        loadGameStartSound()
-        playGameStartSound()
+        playSound(resource: startSoundFile, type: soundType, sound: &startSound)
         questionsAsked = 0
         correctQuestions = 0
         resetCount()
@@ -183,6 +190,7 @@ class ViewController: UIViewController {
         })
     }
 
+    
 
 //viewDidLoad
     override func viewDidLoad() {
@@ -202,8 +210,7 @@ class ViewController: UIViewController {
 
         assignEvents()
         displayEvent()
-        loadGameStartSound()
-        playGameStartSound()
+        playSound(resource: startSoundFile, type: soundType, sound: &startSound)
     }
 
     override func didReceiveMemoryWarning() {
@@ -319,8 +326,7 @@ class ViewController: UIViewController {
             event4Button.isUserInteractionEnabled = true
 
             countdown.invalidate()
-            loadCorrectSound()
-            playCorrectSound()
+            playSound(resource: correctSoundFile, type: soundType, sound: &correctSound)
             nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success.png"), for: .normal)
         }else{
             //Show red button
@@ -329,8 +335,7 @@ class ViewController: UIViewController {
             event3Button.isUserInteractionEnabled = true
             event4Button.isUserInteractionEnabled = true
             countdown.invalidate()
-            loadIncorrectSound()
-            playIncorrectSound()
+            playSound(resource: incorrectSoundFile, type: soundType, sound: &incorrectSound)
             nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_fail.png"), for: .normal)
         }
     }
@@ -358,8 +363,7 @@ class ViewController: UIViewController {
         if questionsAsked == questionsPerRound {
             // Game is over
             displayScore()
-            loadGameEndSound()
-            playGameEndSound()
+            playSound(resource: endSoundFile, type: soundType, sound: &endSound)
             assignEvents()
         } else {
             // Continue game
@@ -434,45 +438,12 @@ class ViewController: UIViewController {
     
     
     
-//Game Sounds
-    func loadGameStartSound() {
-        let pathToSoundFile = Bundle.main.path(forResource: "Boxing Bell Start Round", ofType: "wav")
+    //Game Sounds
+    func playSound(resource: String, type: String, sound: inout SystemSoundID) {
+        let pathToSoundFile = Bundle.main.path(forResource: resource, ofType: type)
         let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &startSound)
-    }
-    
-    func playGameStartSound() {
-        AudioServicesPlaySystemSound(startSound)
-    }
-    
-    
-    func loadGameEndSound() {
-        let pathToSoundFile = Bundle.main.path(forResource: "Boxing Bell End Round", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &endSound)
-    }
-    
-    func playGameEndSound() {
-        AudioServicesPlaySystemSound(endSound)
-    }
-    func loadCorrectSound() {
-        let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &correctSound)
-    }
-    
-    func playCorrectSound() {
-        AudioServicesPlaySystemSound(correctSound)
-    }
-    
-    func loadIncorrectSound() {
-        let pathToSoundFile = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &incorrectSound)
-    }
-    
-    func playIncorrectSound() {
-        AudioServicesPlaySystemSound(incorrectSound)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &sound)
+        AudioServicesPlaySystemSound(sound)
     }
     
     
@@ -491,11 +462,6 @@ class ViewController: UIViewController {
     override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         checkAnswer()
     }
-    
-    
-    
-    
-    
     
 
 }

@@ -14,7 +14,6 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var EventWebView: UIWebView!
     @IBAction func DismissButton(_ sender: AnyObject) {
                 self.dismiss(animated: true, completion: nil)
-//                _ = self.navigationController?.popViewController(animated: true)
     }
     
     
