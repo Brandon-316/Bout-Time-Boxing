@@ -61,7 +61,7 @@ struct Events {
             "URL": "https://en.wikipedia.org/wiki/Boxing_at_the_Summer_Olympics",
         ],
         [
-            "Event": "Boxing first appears at the Olympic Games",
+            "Event": "Jack Johnson becomes the first African American to win the world heavyweight title",
             //12/26/1908
             "Date": "4",
             "URL": "https://en.wikipedia.org/wiki/Jack_Johnson_(boxer)",

@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		843156E81DCFF0BB005F6D7E /* Boxing Bell End Round.wav in Resources */ = {isa = PBXBuildFile; fileRef = 843156E61DCFF0BB005F6D7E /* Boxing Bell End Round.wav */; };
 		843156E91DCFF0BB005F6D7E /* Boxing Bell Start Round.wav in Resources */ = {isa = PBXBuildFile; fileRef = 843156E71DCFF0BB005F6D7E /* Boxing Bell Start Round.wav */; };
-		843156EC1DD0D74C005F6D7E /* Main6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843156EA1DD0D74C005F6D7E /* Main6Plus.storyboard */; };
-		843156EE1DD0E0C8005F6D7E /* Main5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843156ED1DD0E0C8005F6D7E /* Main5.storyboard */; };
-		843156F01DD0E11B005F6D7E /* Main4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843156EF1DD0E11B005F6D7E /* Main4.storyboard */; };
-		843156F41DD0E183005F6D7E /* Main6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843156F31DD0E183005F6D7E /* Main6.storyboard */; };
+		8453250E20BE18EF0059DF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8453250C20BE18EF0059DF08 /* Main.storyboard */; };
 		84B976461DCBF833008C0F4A /* down_full_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B976321DCBF833008C0F4A /* down_full_selected.png */; };
 		84B976471DCBF833008C0F4A /* down_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B976331DCBF833008C0F4A /* down_full.png */; };
 		84B976481DCBF833008C0F4A /* down_half_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B976341DCBF833008C0F4A /* down_half_selected.png */; };
@@ -37,8 +34,11 @@
 		84B9765E1DCBF890008C0F4A /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84B9765C1DCBF890008C0F4A /* IncorrectBuzz.wav */; };
 		84B976601DCC124A008C0F4A /* EventLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9765F1DCC124A008C0F4A /* EventLibrary.swift */; };
 		84B976621DCC132B008C0F4A /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B976611DCC132B008C0F4A /* EventDetail.swift */; };
+		84BCBF5A20BF2E15008768D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCBF5920BF2E15008768D5 /* Extensions.swift */; };
+		84BCBF5C20BF3AA9008768D5 /* SoundLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCBF5B20BF3AA9008768D5 /* SoundLogic.swift */; };
+		84BCBF5E20BF6191008768D5 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCBF5D20BF6191008768D5 /* Countdown.swift */; };
 		84F427011DCABB5E00A58923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F427001DCABB5E00A58923 /* AppDelegate.swift */; };
-		84F427031DCABB5E00A58923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F427021DCABB5E00A58923 /* ViewController.swift */; };
+		84F427031DCABB5E00A58923 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F427021DCABB5E00A58923 /* GameVC.swift */; };
 		84F427081DCABB5E00A58923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F427071DCABB5E00A58923 /* Assets.xcassets */; };
 		84F4270B1DCABB5E00A58923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F427091DCABB5E00A58923 /* LaunchScreen.storyboard */; };
 		84F427161DCABB5F00A58923 /* Bout_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F427151DCABB5F00A58923 /* Bout_TimeTests.swift */; };
@@ -66,10 +66,7 @@
 /* Begin PBXFileReference section */
 		843156E61DCFF0BB005F6D7E /* Boxing Bell End Round.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Boxing Bell End Round.wav"; sourceTree = "<group>"; };
 		843156E71DCFF0BB005F6D7E /* Boxing Bell Start Round.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Boxing Bell Start Round.wav"; sourceTree = "<group>"; };
-		843156EB1DD0D74C005F6D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main6Plus.storyboard; sourceTree = "<group>"; };
-		843156ED1DD0E0C8005F6D7E /* Main5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main5.storyboard; sourceTree = "<group>"; };
-		843156EF1DD0E11B005F6D7E /* Main4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main4.storyboard; sourceTree = "<group>"; };
-		843156F31DD0E183005F6D7E /* Main6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main6.storyboard; sourceTree = "<group>"; };
+		8453250D20BE18EF0059DF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Bout Time/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		84B976321DCBF833008C0F4A /* down_full_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down_full_selected.png; path = BoutTimeAssets/down_full_selected.png; sourceTree = "<group>"; };
 		84B976331DCBF833008C0F4A /* down_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down_full.png; path = BoutTimeAssets/down_full.png; sourceTree = "<group>"; };
 		84B976341DCBF833008C0F4A /* down_half_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down_half_selected.png; path = BoutTimeAssets/down_half_selected.png; sourceTree = "<group>"; };
@@ -94,9 +91,12 @@
 		84B9765C1DCBF890008C0F4A /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = IncorrectBuzz.wav; path = AudioClips/IncorrectBuzz.wav; sourceTree = "<group>"; };
 		84B9765F1DCC124A008C0F4A /* EventLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLibrary.swift; sourceTree = "<group>"; };
 		84B976611DCC132B008C0F4A /* EventDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		84BCBF5920BF2E15008768D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84BCBF5B20BF3AA9008768D5 /* SoundLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLogic.swift; sourceTree = "<group>"; };
+		84BCBF5D20BF6191008768D5 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		84F426FD1DCABB5E00A58923 /* Bout Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F427001DCABB5E00A58923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F427021DCABB5E00A58923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F427021DCABB5E00A58923 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		84F427071DCABB5E00A58923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F4270A1DCABB5E00A58923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F4270C1DCABB5E00A58923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,15 +195,15 @@
 		84F426FF1DCABB5E00A58923 /* Bout Time */ = {
 			isa = PBXGroup;
 			children = (
+				8453250C20BE18EF0059DF08 /* Main.storyboard */,
 				84F427001DCABB5E00A58923 /* AppDelegate.swift */,
-				84F427021DCABB5E00A58923 /* ViewController.swift */,
+				84F427021DCABB5E00A58923 /* GameVC.swift */,
 				84F427321DCADD1500A58923 /* EventDetailViewController.swift */,
 				84B9765F1DCC124A008C0F4A /* EventLibrary.swift */,
 				84B976611DCC132B008C0F4A /* EventDetail.swift */,
-				843156EF1DD0E11B005F6D7E /* Main4.storyboard */,
-				843156ED1DD0E0C8005F6D7E /* Main5.storyboard */,
-				843156F31DD0E183005F6D7E /* Main6.storyboard */,
-				843156EA1DD0D74C005F6D7E /* Main6Plus.storyboard */,
+				84BCBF5D20BF6191008768D5 /* Countdown.swift */,
+				84BCBF5B20BF3AA9008768D5 /* SoundLogic.swift */,
+				84BCBF5920BF2E15008768D5 /* Extensions.swift */,
 				84F427071DCABB5E00A58923 /* Assets.xcassets */,
 				84F427091DCABB5E00A58923 /* LaunchScreen.storyboard */,
 				84F4270C1DCABB5E00A58923 /* Info.plist */,
@@ -294,21 +294,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Brandon Mahoney";
 				TargetAttributes = {
 					84F426FC1DCABB5E00A58923 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = B29P2M257D;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					84F427101DCABB5F00A58923 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84F426FC1DCABB5E00A58923;
 					};
 					84F4271B1DCABB5F00A58923 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84F426FC1DCABB5E00A58923;
 					};
@@ -341,7 +344,6 @@
 			files = (
 				84B9764C1DCBF833008C0F4A /* icon58@2x.png in Resources */,
 				84B976521DCBF833008C0F4A /* next_round_success.png in Resources */,
-				843156EC1DD0D74C005F6D7E /* Main6Plus.storyboard in Resources */,
 				843156E81DCFF0BB005F6D7E /* Boxing Bell End Round.wav in Resources */,
 				84F4270B1DCABB5E00A58923 /* LaunchScreen.storyboard in Resources */,
 				84B9765E1DCBF890008C0F4A /* IncorrectBuzz.wav in Resources */,
@@ -351,12 +353,9 @@
 				84B9765D1DCBF890008C0F4A /* CorrectDing.wav in Resources */,
 				84B976471DCBF833008C0F4A /* down_full.png in Resources */,
 				84B976551DCBF833008C0F4A /* up_full_selected.png in Resources */,
-				843156EE1DD0E0C8005F6D7E /* Main5.storyboard in Resources */,
 				84B976541DCBF833008C0F4A /* splash_screen.png in Resources */,
-				843156F01DD0E11B005F6D7E /* Main4.storyboard in Resources */,
 				84B9764A1DCBF833008C0F4A /* icon29@1x.png in Resources */,
 				84B9764E1DCBF833008C0F4A /* icon87@3x.png in Resources */,
-				843156F41DD0E183005F6D7E /* Main6.storyboard in Resources */,
 				84B9764F1DCBF833008C0F4A /* icon120@3x.png in Resources */,
 				84B9764B1DCBF833008C0F4A /* icon40@1x.png in Resources */,
 				84B976481DCBF833008C0F4A /* down_half_selected.png in Resources */,
@@ -368,6 +367,7 @@
 				84B976571DCBF833008C0F4A /* up_half_selected.png in Resources */,
 				84B976581DCBF833008C0F4A /* up_half.png in Resources */,
 				84B976501DCBF833008C0F4A /* icon180@3x.png in Resources */,
+				8453250E20BE18EF0059DF08 /* Main.storyboard in Resources */,
 				84B976591DCBF833008C0F4A /* webview_bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,9 +395,12 @@
 			files = (
 				84B976601DCC124A008C0F4A /* EventLibrary.swift in Sources */,
 				84F427331DCADD1500A58923 /* EventDetailViewController.swift in Sources */,
-				84F427031DCABB5E00A58923 /* ViewController.swift in Sources */,
+				84BCBF5C20BF3AA9008768D5 /* SoundLogic.swift in Sources */,
+				84F427031DCABB5E00A58923 /* GameVC.swift in Sources */,
 				84B976621DCC132B008C0F4A /* EventDetail.swift in Sources */,
 				84F427011DCABB5E00A58923 /* AppDelegate.swift in Sources */,
+				84BCBF5A20BF2E15008768D5 /* Extensions.swift in Sources */,
+				84BCBF5E20BF6191008768D5 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +436,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		843156EA1DD0D74C005F6D7E /* Main6Plus.storyboard */ = {
+		8453250C20BE18EF0059DF08 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				843156EB1DD0D74C005F6D7E /* Base */,
+				8453250D20BE18EF0059DF08 /* Base */,
 			);
-			name = Main6Plus.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		84F427091DCABB5E00A58923 /* LaunchScreen.storyboard */ = {
@@ -461,7 +464,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -469,7 +474,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -512,7 +521,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -520,7 +531,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -556,7 +571,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -570,7 +586,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -584,7 +601,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bout Time.app/Bout Time";
 			};
 			name = Debug;
@@ -598,7 +616,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bout Time.app/Bout Time";
 			};
 			name = Release;
@@ -611,7 +630,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-TimeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Bout Time";
 			};
 			name = Debug;
@@ -624,7 +644,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brandonmahoney.tech.Bout-TimeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Bout Time";
 			};
 			name = Release;

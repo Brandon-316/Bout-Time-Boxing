@@ -15,30 +15,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if UIScreen.main.bounds.size.height == 480 {
-            let storyboard = UIStoryboard(name: "Main4", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "4")
-            self.window?.rootViewController = vc
-        }else {
-            if UIScreen.main.bounds.size.height == 568 {
-                let storyboard = UIStoryboard(name: "Main5", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "5")
-                self.window?.rootViewController = vc
-            }else{
-                if UIScreen.main.bounds.size.height == 667 {
-                    let storyboard = UIStoryboard(name: "Main6", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "6")
-                    self.window?.rootViewController = vc
-                }else {
-                    if UIScreen.main.bounds.size.height == 736 {
-                        let storyboard = UIStoryboard(name: "Main6Plus", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "6Plus")
-                        self.window?.rootViewController = vc
-                    }
-                }
-            }
-        }
-        // Override point for customization after application launch.
+        
+//        if UIScreen.main.bounds.size.height == 480 {
+//            let storyboard = UIStoryboard(name: "Main4", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "4")
+//            self.window?.rootViewController = vc
+//        }else {
+//            if UIScreen.main.bounds.size.height == 568 {
+//                let storyboard = UIStoryboard(name: "Main5", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "5")
+//                self.window?.rootViewController = vc
+//            }else{
+//                if UIScreen.main.bounds.size.height == 667 {
+//                    let storyboard = UIStoryboard(name: "Main6", bundle: nil)
+//                    let vc = storyboard.instantiateViewController(withIdentifier: "6")
+//                    self.window?.rootViewController = vc
+//                }else {
+//                    if UIScreen.main.bounds.size.height == 736 {
+//                        let storyboard = UIStoryboard(name: "Main6Plus", bundle: nil)
+//                        let vc = storyboard.instantiateViewController(withIdentifier: "6Plus")
+//                        self.window?.rootViewController = vc
+//                    }
+//                }
+//            }
+//        }
+        
         return true
     }
 
