@@ -123,7 +123,7 @@ class GameVC: UIViewController {
         event4Button.setTitle(eventsDictionary4.event, for: .normal)
         event4Button.tag = Int(eventsDictionary4.date!)!
         
-        handleInteractionEnabled()
+        handleInteractionEnabled(eventButtons: false, arrowButtons: true)
         
         eventBtn1URL = eventsDictionary1.url!
         eventBtn2URL = eventsDictionary2.url!
@@ -156,19 +156,41 @@ class GameVC: UIViewController {
         if event1.tag < event2.tag && event2.tag < event3.tag && event3.tag < event4.tag {
             correctQuestions += 1
             
-            handleInteractionEnabled()
+            handleInteractionEnabled(eventButtons: true, arrowButtons: false)
 
             countdown.invalidate()
             sound.playSound(sound: &correctSound, soundType: .correct)
             nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success.png"), for: .normal)
         }else{
             //Show red button
-            handleInteractionEnabled()
-            
+            handleInteractionEnabled(eventButtons: true, arrowButtons: false)
             countdown.invalidate()
             sound.playSound(sound: &incorrectSound, soundType: .incorrect)
             nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_fail.png"), for: .normal)
+            showCorrectAnswer()
         }
+    }
+    
+    func showCorrectAnswer() {
+        let event1 = eventsStack.arrangedSubviews[0] as! UIButton
+        let event2 = eventsStack.arrangedSubviews[1] as! UIButton
+        let event3 = eventsStack.arrangedSubviews[2] as! UIButton
+        let event4 = eventsStack.arrangedSubviews[3] as! UIButton
+        
+        var events = [event1, event2, event3, event4]
+        
+        events.sort { $0.tag < $1.tag }
+        
+        var index = 0
+        
+        UIView.animate(withDuration: 0.5, animations:{
+            while index < 4 {
+                self.eventsStack.removeArrangedSubview(events[index])
+                self.eventsStack.insertArrangedSubview(events[index], at: index)
+                index += 1
+            }
+            self.eventsStack.layoutIfNeeded()
+        })
     }
 
     //Load Next Round
@@ -199,11 +221,17 @@ class GameVC: UIViewController {
     }
     
     //Button methods
-    func handleInteractionEnabled() {
-        let buttons = [event1Button, event2Button, event3Button, event4Button]
-        for button in buttons {
-            button?.isUserInteractionEnabled = !(button?.isUserInteractionEnabled)!
+    func handleInteractionEnabled(eventButtons: Bool, arrowButtons: Bool) {
+        let eventBtns = [event1Button, event2Button, event3Button, event4Button]
+        for button in eventBtns {
+            button?.isUserInteractionEnabled = eventButtons
         }
+        
+        let arrowBtns = [label1Button, label2UpButton, label2DownButton, label3UpButton, label3DownButton, label4Button]
+        for button in arrowBtns {
+            button?.isUserInteractionEnabled = arrowButtons
+        }
+        
     }
     
     func roundButtons() {
@@ -286,7 +314,7 @@ class GameVC: UIViewController {
             default: return
         }
         
-        UIView.animate(withDuration: 0.3, animations:{
+        UIView.animate(withDuration: 0.5, animations:{
             self.eventsStack.removeArrangedSubview(event!)
             self.eventsStack.insertArrangedSubview(event!, at: index!)
             self.eventsStack.layoutIfNeeded()
