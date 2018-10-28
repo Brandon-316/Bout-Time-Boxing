@@ -34,6 +34,9 @@ class GameVC: UIViewController {
     var eventBtn3URL = ""
     var eventBtn4URL = ""
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
 // MARK: Outlets
     @IBOutlet weak var event1Button: UIButton!
@@ -183,7 +186,7 @@ class GameVC: UIViewController {
         
         var index = 0
         
-        UIView.animate(withDuration: 0.5, animations:{
+        UIView.animate(withDuration: 1.0, animations:{
             while index < 4 {
                 self.eventsStack.removeArrangedSubview(events[index])
                 self.eventsStack.insertArrangedSubview(events[index], at: index)
